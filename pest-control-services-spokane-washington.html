@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Step-by-Step Guide to Safe Pest Removal in Homes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="/">Latest News</a></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#authors">News</a></li>
+                <li><a href="#authors">Categories</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="https://image-cloud-server.netlify.app/image_Pest-Control-Home.jpg" class="header-image">
+        <h1>A Step-by-Step Guide to Safe Pest Removal in Homes</h1>
+        <div class="author">
+            <img src="https://image-cloud-server.netlify.app/headshot.jpg" alt="Author Headshot">
+            <span>By Ethan Walker</span> 
+            <span class="meta"> · 27 August 2024 · 5 min read</span>
+        </div>
+ 
+
+
+       
+        <div class="content">
+            <hr>
+             <h2>Identifying the Type of Pest</h2>
+
+<p>Understanding pests is the first step in ensuring your home remains safe and healthy. Certain pests are common in every household. Think of <strong>ants</strong>, <strong>roaches</strong>, <strong>termites</strong>, and <strong>mice</strong>. Recognizing which pest you are dealing with helps narrow down the best removal strategy. Do you know which pests invade your home? Learning about them is key.</p>
+
+<p>When you notice unusual activity or damage, identifying the pest comes next. Look closely for specific features like color, size, and habitat. For example, <strong>bed bugs</strong> are small and reddish-brown, often hiding in seams of mattresses. Consider keeping a <strong>pest field guide</strong> handy for quick identification. </p>
+
+<h3>Common Household Pests</h3>
+
+<p>Households face invasions from various pests, each bringing unique challenges. <strong>Rodents</strong> like rats and mice can cause structural damage and contaminant issues. <strong>Insects</strong> such as ants and cockroaches are not just annoying; some, like termites, can destroy wooden structures. Other pests, like <strong>spiders</strong> and <strong>wasps</strong>, might seem harmless but can be dangerous.</p>
+
+<p>Some pests carry diseases that may affect your family, making it crucial to recognize and remove them early. Have you seen any droppings? This could indicate the presence of pests. </p>
+
+<h3>Signs of Infestation</h3>
+
+<p>Identifying signs of infestation is crucial for a prompt response. Look for <strong>droppings</strong>, which are often the first indicator. You might also notice <strong>gnawed materials</strong>, such as wires or furniture. Smelling something unusual? Odors can signal pest presence. </p>
+
+<p><strong>Nests</strong> or mud tubes are additional signs of insect infestation. For instance, termites leave behind small, mud-like structures around your home. Regular checks help catch infestations before they escalate. </p>
+
+<h3>Pest Identification Resources</h3>
+
+<p>Several resources can aid in identifying pests. <strong>University extension services</strong> often provide guides on common household pests in your area. Websites from pest control companies may offer identification tools. <strong>Mobile apps</strong> can help you identify insects and rodents based on pictures you upload. </p>
+
+<p>Local libraries might have a collection of pest identification books. Creating an understanding of pest characteristics helps you act swiftly and effectively. </p>
+
+<h2>Assessing the Extent of the Infestation</h2>
+
+<p>After identifying the pest, assessing the extent of the problem is next. Conduct a detailed inspection of your home. Check areas like basements, attics, and behind furniture. Knowing how widespread the infestation is will guide your removal efforts.</p>
+
+<p>Do you have a systematic way of performing inspections? By establishing a thorough checklist for your inspections, you can cover vital areas without missing any signs of infestation. </p>
+
+<h3>Initial Inspection Areas</h3>
+
+<p>Start your inspection in the places pests usually hide. These include <strong>kitchens</strong>, where food is present, and <strong>bathrooms</strong>, where moisture attracts them. <strong>Storage areas</strong> such as garages or basements can also harbor pests due to clutter and less traffic.</p>
+
+<p>Pay attention to areas behind appliances. These are notorious for hiding pests due to residual food particles. The more closely you examine these critical spots, the better you’ll understand the extent of the problem. </p>
+
+<h3>Tools for Inspection</h3>
+
+<p>Using the right tools can make inspections easier. A <strong>flashlight</strong> helps spot pests in dark areas. Consider a <strong>magnifying glass</strong> for closely examining droppings or nest materials. Additionally, a <strong>notebook</strong> comes in handy for documenting findings.</p>
+
+<p>Have you ever thought about using a camera? Photographs can help track changes in infestation over time. Organizing your findings clearly aids in assessing the situation accurately.</p>
+
+<h3>Documenting Infestation Severity</h3>
+
+<p>Effective documentation serves two key purposes. First, it helps you track the level of infestation. Are you using a scale to rate severity? Secondly, it prepares you when discussing the situation with pest control experts. Accurate information leads to better advice and treatment options.</p>
+
+<p>Consider making a detailed report, including the location, signs observed, and estimated number of pests. This record will make future inspections and treatments more efficient.</p>
+
+<h2>Choosing the Right Pest Control Method</h2>
+
+<p>When it comes to pest control, selecting the appropriate method is essential. You have both <strong>chemical</strong> and <strong>non-chemical</strong> options. Each has its own strengths and potential drawbacks, depending on your situation.</p>
+
+<p>Have you considered your household’s unique needs? Factors like children, pets, and the type of pest will influence your choice significantly. </p>
+
+<h3>Chemical Pest Control Options</h3>
+
+<p>Chemical pest control options often provide immediate results. Products like <strong>insecticides</strong> or <strong>rodenticides</strong> target specific pests effectively. For example, sprays can eliminate ants quickly, while traps capture rodents. </p>
+
+<p>However, are you aware of the potential downsides? Chemical treatments can sometimes pose hazards to humans and pets. Ensuring proper ventilation during application is crucial. Always read instructions carefully and use protective gear.</p>
+
+<h3>Non-Chemical Pest Control Options</h3>
+
+<p>Non-chemical methods offer safer alternatives for homes with children and pets. For example, using <strong>essential oils</strong> can repel some insects naturally. Traps and barriers also work effectively without chemicals. </p>
+
+<p>Have you tried <strong>natural predators</strong>? Certain insects are beneficial and can help control pest populations. For instance, ladybugs feed on aphids, making them a great addition to gardens. Though non-chemical options may take longer, they can be effective over time.</p>
+
+<h3>Pros and Cons of Each Method</h3>
+
+<p>Both methods come with their own upsides and downsides. Chemical options provide quick relief but can have health impacts if not used correctly. Meanwhile, non-chemical solutions prioritize safety but may require more effort and time.</p>
+
+<p>Taking an informed approach about each option helps you make better decisions. You must weigh immediate effectiveness against long-term safety. </p>
+
+<h2>Preparing Your Home for Pest Control</h2>
+
+<p>Preparation plays a vital role in ensuring effective pest control. Before applying any treatments, there's work to do. Have you decluttered affected areas yet? Removing unnecessary items makes areas easier to treat.</p>
+
+<p>Clearing surfaces protects your belongings and ensures the agents you apply reach the pests directly. </p>
+
+<h3>Decluttering Affected Areas</h3>
+
+<p>Decluttering should be your first step. Pests like to hide in cluttered spaces; removing items gives you a better shot at treating the problem. Take time to organize spaces, especially where you suspect infestation.</p>
+
+<p>Remember to move furniture away from walls to inspect behind it. A tidy area allows for thorough cleaning and treatment. What do you find in those previously crowded spaces? You might be surprised by what you've uncovered.</p>
+
+<h3>Sealing Entry Points</h3>
+
+<p>Are there any visible entry points in your home? Inspect doors, windows, and cracks in walls. Sealing these gaps prevents pests from re-entering after treatment. Use caulk or weather stripping where needed.</p>
+
+<p>Pay special attention to areas around utilities and pipes. Mice and insects can squeeze through the tiniest gaps. Taking actions like this makes your environment less inviting for pests.</p>
+
+<h3>Safeguarding Pets and Children</h3>
+
+<p>It's crucial to consider the safety of pets and children during pest control. Do you have a secure way to keep them away from treatment areas? Designate specific rooms as safe zones until treatments are complete.</p>
+
+<p>Using non-chemical methods can help, but don’t overlook safety with chemical options. Always read labels and follow instructions meticulously to ensure their safety.</p>
+
+<h2>Applying Pest Control Measures</h2>
+
+<p>Applying pest control measures is a structured process. Both chemical and non-chemical methods require a clear plan. Are you ready to tackle the task? Following a step-by-step guide can simplify this process for you.</p>
+
+<p>It's smart to prepare everything you need before starting. Knowing precisely what to do helps you execute the process smoothly.</p>
+
+<h3>Step-by-Step Guide for Chemical Treatments</h3>
+
+<p>Chemicals require careful application. Here’s how you can get started:
+- <strong>Read the instructions:</strong> Ensure you understand how to use the product.
+- <strong>Wear protective gear:</strong> Use gloves and a mask if needed.
+- <strong>Target the right areas:</strong> Focus on spots where you discovered signs of infestation.
+- <strong>Ventilate the area:</strong> Open windows and doors for airflow to minimize inhalation risk.</p>
+
+<p>After application, ensure no one, including pets, enters the treated area until it's safe. Proper execution leads to better results.</p>
+
+<h3>Step-by-Step Guide for Non-Chemical Treatments</h3>
+
+<p>Non-chemical methods also have specific procedures. Here are some steps:
+- <strong>Locate pests actively:</strong> Use traps in places where you perceive activity.
+- <strong>Set traps correctly:</strong> Follow manufacturer instructions on placement.
+- <strong>Use deterrents consistently:</strong> Apply natural repellents regularly for the best effects.</p>
+
+<p>Monitoring effectiveness is important. Are traps catching pests? Adjust your strategy based on what works and what doesn’t.</p>
+
+<h3>Safety Precautions During Application</h3>
+
+<p>Safety should always come first. For chemical treatments, avoid applying during windy days. Wind can carry chemicals to unintended areas. Keep pets and children away from treated spaces until completely dry.</p>
+
+<p>Have you considered the risks of mixing products? Combining different chemicals can lead to hazardous reactions. Always stick to the instructions on each label to maintain safety.</p>
+
+<h2>Monitoring and Follow-up</h2>
+
+<p>Once treatments are complete, monitoring the situation is necessary. Did the pests disappear? Setting up monitoring devices helps track any remaining activity. Continuous observation leads to better control. </p>
+
+<p>Don’t overlook the need for follow-ups. Regular checks ensure pests do not return after removal measures.</p>
+
+<h3>Setting Up Monitoring Traps</h3>
+
+<p>After treatment, place monitoring traps strategically. Using multiple traps increases chances of catching any lingering pests. Pay attention to areas where you initially spotted the infestation.</p>
+
+<p>Regularly check traps to assess their effectiveness. Are you still finding pests? If so, consider adjusting your tactics or seeking help from professionals.</p>
+
+<h3>Signs of Successful Pest Control</h3>
+
+<p>So, how do you know if you've succeeded? Look for a lack of activity, dropped traps, and absence of droppings. Also, your home should feel free of pest-related worries.</p>
+
+<p>Successful control involves short and long-term monitoring. If conditions improve significantly over weeks, you can feel confident in your methods. </p>
+
+<h3>When to Call a Professional</h3>
+
+<p>Sometimes, do-it-yourself measures aren’t enough. Are you facing ongoing issues despite your efforts? Calling a professional can be the best solution.</p>
+
+<p>Pest control experts have advanced tools and knowledge, ensuring effective treatments. They can help you tackle deep-rooted infestations and tailor plans that suit your needs. It’s okay to ask for help when needed.</p>
+
+<h2>Preventative Measures to Avoid Future Infestations</h2>
+
+<p>Once pests are gone, taking preventative steps is essential. Have you thought about what changes you can implement? Being proactive can save time and stress in the future.</p>
+
+<p>Prevention can be simple. Regular maintenance and cleanliness go a long way in keeping pests away.</p>
+
+<h3>Regular Cleaning and Maintenance</h3>
+
+<p>Establish a routine for cleaning your home. Keeping surfaces clean reduces food sources for pests. Consider incorporating deep cleaning sessions to address hidden areas like under beds, behind appliances, and in closets.</p>
+
+<p>Inspection during cleaning helps you spot potential issues before they escalate. You'll become attuned to what looks normal and what seems out of place. Small changes can make a significant impact over time.</p>
+
+<h3>Sealing and Repairing Entry Points</h3>
+
+<p>After removing pests, reinforce your defenses. Regularly inspect and seal any openings in your home. Repair damaged screens, doorframes, and window seals. </p>
+
+<p>Have you checked for gaps around utility lines or pipes? Pests can slip through these unnoticed. Sealing gaps ensures that your home remains impenetrable, keeping pests outside where they belong.</p>
+
+<h3>Safe Storage of Food and Waste Management</h3>
+
+<p>How do you store your food? Keeping food sealed in airtight containers can prevent pests from being drawn to your kitchen. Regularly dispose of waste, and ensure trash bins have tight lids. </p>
+
+<p>Consider composting properly. If organic waste is neglected, it can attract pests into your home. Regular waste management contributes greatly to a pest-free environment. </p>
+
+<p>By taking these steps, you ensure that your home remains a safe haven, far removed from pesky intruders. Each measure contributes to a healthier living space, making your home a pleasant place for you and your family.</p>
+
+            
+
+
+            <br><br> <p>
+                
+                Are you looking for professional services? Find more details here: 
+            
+
+        
+
+
+        <a href="https://www.altapestcontrol.com/locations/spokane-washington-pest-control">Locally Owned Pest Control</a><br>
+
+
+
+<br><br>
+        
+        </p>
+
+        
+        <p><p>Alta Pest Control <br>
+9514 E Montgomery Ave #20 <br>
+Spokane Valley, WA 99206 <br>
+(509) 676-6262 <br>
+https://www.altapestcontrol.com/locations/spokane-washington-pest-control <br>
+</p></p>
+    
+
+        
+        <img src="https://image-cloud-server.netlify.app/logo_logoaltapest.png" alt="Logo">
+        
+
+
+             
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56362072.781990245!2d-175.7299467!3d30.434176500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549e23fe822c8d19%3A0x8feb317154081278!2sAlta%20Pest%20Control!5e0!3m2!1sen!2spl!4v1724697951514!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+"<script type=""application/ld+json"">
+{
+    ""@context"": ""https://schema.org"",
+    ""@type"": ""LocalBusiness"",
+    ""name"": ""Alta Pest Control"",
+    ""address"": {
+        ""@type"": ""PostalAddress"",
+        ""streetAddress"": ""9514 E Montgomery Ave #20"",
+        ""addressLocality"": ""Spokane Valley"",
+        ""addressRegion"": ""WA"",
+        ""postalCode"": ""99206"",
+        ""addressCountry"": ""US""
+    },
+    ""telephone"": ""(509) 676-6262"",
+    ""url"": ""https://www.altapestcontrol.com/locations/spokane-washington-pest-control""
+}
+</script>
+"</div>
+        
+           <br> <p>
+       Related article: <a href="https://wolhun.github.io/business-blog/pest-control-services-spokane-washington.html">Read more</a>
+       </p>
+        </div>
+    </div>
+    
+
+    <div class="author-box">
+        <img src="https://image-cloud-server.netlify.app/headshot.jpg" alt="Author Headshot">
+        <div class="info">
+            <h3>Ethan Walker</h3>
+            <p>Senior Copywriter</p>
+            <p>Ethan Walker is an accomplished copywriter specializing in home and business pest services. With over a decade of experience in the pest control industry, Ethan crafts compelling content that educates and engages audiences, helping businesses and homeowners maintain pest-free environments. His expertise and insightful writing have made him a trusted voice in pest management, consistently delivering clear and effective communication that resonates with clients and drives results.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <h3>Daily Dose of News</h3>
+                <p>&copy; 2024, All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Legal Stuff</h3>
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social Media</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+     // Select all anchor tags in the document
+     const links = document.querySelectorAll('a');
+ 
+     // Iterate over each link
+     links.forEach(link => {
+         let href = link.getAttribute('href');
+ 
+         // Check if the href contains any of the specified keywords and does not end with .html or any other file extension
+         if (href && (href.includes('netlify.app') || href.includes('vercel.app') || 
+                      href.includes('storage') || href.includes('s3') || 
+                      href.includes('web') || href.includes('web') || 
+                      href.includes('cloud') || href.includes('object'))) {
+             if (!href.endsWith('.html') && !href.match(/\.\w+$/)) {
+                 // Add .html extension
+                 href += '.html';
+                 link.setAttribute('href', href);
+             }
+         }
+     });
+ });
+ </script>
+ 
+</body>
+</html>
