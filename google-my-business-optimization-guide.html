@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of Renewable Energy </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="/">Latest News</a></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#authors">News</a></li>
+                <li><a href="#authors">Categories</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="https://image-cloud-server.netlify.app/image_google-my-business-guide.jpg" class="header-image">
+        <h1>The Future of Renewable Energy </h1>
+        <div class="author">
+           
+            <span>By James Warren</span> 
+            <span class="meta"> · 29 August 2024 · 5 min read</span>
+        </div>
+ 
+
+
+       
+        <div class="content">
+            <hr>
+             <h2>Advancements in Solar Power Technology</h2>
+
+<h3>Photovoltaic Cell Innovations</h3>
+
+<p>New technologies are transforming <strong>photovoltaic (PV) cells</strong>. Manufacturers are exploring materials like <strong>perovskite</strong>, which can greatly enhance efficiency and lower production costs. These cells can absorb more sunlight and convert it into energy more effectively. Imagine a solar panel that works even on cloudy days or in low-light conditions. That’s the promise of new materials like these.</p>
+
+<p>Moreover, <strong>bifacial solar panels</strong> are gaining popularity. They can capture sunlight from both sides, significantly boosting energy output. By reflecting light off surfaces such as the ground, these panels harvest more energy. This advancement can lead to greater energy production from the same physical space. Isn’t that a smart way to utilize the available area?</p>
+
+<h3>Solar Panel Efficiency Improvements</h3>
+
+<p>The efficiency of solar panels is crucial for their adoption. Recently, researchers have developed panels that exceed <strong>22% efficiency</strong>. How does this affect consumers? Higher efficiency means homeowners can generate more power using fewer panels. This can lower installation costs and save space on rooftops.</p>
+
+<p>Furthermore, solar tracking systems are becoming more widespread. These systems move panels to follow the sun throughout the day, maximizing exposure. By utilizing such technologies, we can harness the sun’s energy to its full potential. Isn’t it exciting to think that we can catch every bit of sunlight available?</p>
+
+<h3>Solar Energy Storage Solutions</h3>
+
+<p>Energy storage is a game changer for solar energy. Technologies like <strong>lithium-ion batteries</strong> are revolutionizing how we store electricity generated by solar panels. This means homeowners can use their stored energy even when the sun isn’t shining. With better storage options, energy independence is within reach. </p>
+
+<p>In addition, new methods like <strong>flow batteries</strong> are emerging. They can offer longer storage durations and greater scalability. As we push forward with these innovations, the effectiveness of solar energy as a primary energy source will undoubtedly grow. Isn’t it reassuring to know that our energy can be both clean and reliable? <a href="https://www.lab-robotics.org/tw/star/6/google-my-business-optimization-guide">Tips to Optimize Google My Business for Enhanced Visibility</a> can also provide meaningful insights for homeowners interested in solar energy.</p>
+
+<h2>Wind Energy Developments</h2>
+
+<h3>Offshore Wind Farms</h3>
+
+<p>Offshore wind farms are expanding rapidly. They harness wind energy over the ocean, where winds are stronger and more consistent. These farms can generate a significant amount of electricity that feeds directly into the grid. <strong>Europe</strong> is leading the way, but countries like the <strong>United States</strong> are also building more offshore wind projects.</p>
+
+<p>The benefits are numerous. Not only do offshore wind farms reduce reliance on fossil fuels, but they also create jobs in manufacturing and maintenance. Think about the potential for clean energy production and economic growth intertwined in this sector. It’s a win-win scenario for many communities.</p>
+
+<h3>Turbine Design Enhancements</h3>
+
+<p>Design improvements in wind turbines are making them more efficient and cheaper to produce. Taller turbines with larger blades can capture more wind, leading to increased energy production. These designs allow for energy generation at lower wind speeds, making them more versatile.</p>
+
+<p>Moreover, innovations such as <strong>smart turbine technology</strong> are worth noting. These turbines can monitor performance and adjust to optimize their efficiency in real-time, reducing wear and tear. As technology progresses, think about how these advancements can drive down the cost of wind energy further.</p>
+
+<h3>Grid Integration Challenges and Solutions</h3>
+
+<p>Integrating wind energy into existing grids poses a challenge. The inconsistency of wind requires smart solutions. However, advancements in <strong>grid management technology</strong> help balance energy supplies from various sources. Using <strong>forecasting tools</strong> allows grid operators to predict energy availability, making planning easier.</p>
+
+<p>Furthermore, energy storage systems can play a role in smoothing out spikes and drops in wind production. By storing excess energy when the wind blows, we can release it during calm periods. Wouldn’t it be fantastic to think about energy flowing seamlessly from wind to your home?</p>
+
+<h2>The Role of Hydropower</h2>
+
+<h3>Small-Scale Hydropower Plants</h3>
+
+<p>Small-scale hydropower plants offer an adaptable solution to meet local energy needs. They can be built in areas where large dams are not feasible. Often, these plants can produce enough energy for a town or community, reducing reliance on fossil fuels. <strong>Community empowerment</strong> is a key benefit of such projects.</p>
+
+<p>Importantly, they have a smaller environmental footprint. Because they require less infrastructure, they can minimize disruption to local ecosystems. This is an attractive option for areas looking to invest in clean energy without significant environmental consequences. How wonderful would it be to combine energy needs with protection of nature?</p>
+
+<h3>Innovations in Turbine Technology</h3>
+
+<p>Recent innovations in turbine technology promise to enhance hydropower efficiency. <strong>Advanced turbine designs</strong>, such as <strong>Kaplan and Francis turbines</strong>, can adapt to varying water flows. This means that even small water movements can be harnessed for energy production. Such flexibility can greatly benefit regions with fluctuating water sources.</p>
+
+<p>In addition, <strong>digital monitoring systems</strong> enable real-time analysis of turbine performance. This ensures that they operate at optimal efficiency and helps prevent mechanical failures. Think of the security and reliability these systems can provide – maintaining consistent power generation in changing conditions.</p>
+
+<h3>Environmental and Ecological Considerations</h3>
+
+<p>Any energy source, including hydropower, has environmental impacts. Understanding the ecological balance is essential. <strong>Protecting fish populations</strong> and local habitats must be a priority when developing these plants. Innovations like fish-friendly turbines can help mitigate negative impacts.</p>
+
+<p>Furthermore, careful planning and stakeholder consultation can lead to more sustainable projects. Engaging the community in these discussions fosters transparency and support for hydropower solutions. Isn’t it important to make sure our energy decisions respect both people and the environment?</p>
+
+<h2>Emerging Trends in Geothermal Energy</h2>
+
+<h3>Enhanced Geothermal Systems (EGS)</h3>
+
+<p>Enhanced Geothermal Systems offer incredible potential for energy production. Unlike traditional geothermal systems, EGS allows for energy extraction in areas lacking sufficient natural geothermal reservoirs. This is done by injecting water into the Earth to create steam, which can then generate electricity. Isn’t it fascinating that we can safely tap into the Earth’s heat in more locations than ever?</p>
+
+<p>Geothermal energy is not only environmentally friendly, but also reliable. Once established, these systems can provide a continuous power supply. They can operate independently of weather conditions, ensuring a stable energy flow. Communities could greatly benefit from a source of energy that remains constant.</p>
+
+<h3>Geothermal Heating and Cooling Applications</h3>
+
+<p>Beyond electricity generation, geothermal energy has remarkable heating and cooling applications. Geothermal heat pumps can utilize ground temperature to maintain comfortable indoor climates. This technology is energy-efficient and reduces utility costs significantly.</p>
+
+<p>As homes increasingly seek ways to lower their carbon footprints, geothermal heating presents an attractive option. The ability to harness the Earth’s natural heat for everyday comfort could usher in a new wave of energy-saving technologies. Isn't it inspiring to think about the potential for comfort in harmony with nature?</p>
+
+<h3>Geothermal Resource Mapping</h3>
+
+<p>Geothermal resource mapping plays a vital role in identifying areas suitable for development. By assessing geological conditions, scientists can locate the best sites for harvesting geothermal energy. This method provides critical data for investment and policy decisions.</p>
+
+<p>Technological advancements now allow for more precise mapping. <strong>Geographic information systems (GIS)</strong> and remote sensing are revolutionizing how we analyze potential geothermal sites. As we continue to explore these options, the chances of discovering new geothermal energy sources increase. Isn’t it exciting that energy innovation is driven by science and discovery?</p>
+
+<h2>Biomass and Bioenergy Innovations</h2>
+
+<h3>Advanced Biomass Conversion Technologies</h3>
+
+<p>In recent years, powerful biomass conversion technologies have emerged. These advancements can turn agricultural waste and byproducts into biofuels. It’s remarkable to think that what was once considered waste can be transformed into a sustainable energy source.</p>
+
+<p>Furthermore, processes like <strong>gasification</strong> and <strong>pyrolysis</strong> produce biofuels more efficiently. These methods create energy-rich gases that can be used for heat or power. As we invest in these technologies, the potential for biomass to play a significant role in our energy mix becomes clearer. Have you ever considered where some of your energy can come from?</p>
+
+<h3>Bioenergy Crop Development</h3>
+
+<p>Bioenergy crops are crops specifically grown for energy production. They can be cultivated on marginal lands without impacting food crops. Think about the potential to create energy while also maintaining food supplies. This balance is critical for sustainable agricultural practices.</p>
+
+<p>Innovations in crop genetics also enhance the viability of these energy crops. Researchers are developing varieties that yield higher biomass and require fewer resources. Thus, cultivating bioenergy crops can be both economically beneficial and environmentally friendly. Isn't it empowering to know these fields contribute to a greener future?</p>
+
+<h3>Algae Biofuel Potential</h3>
+
+<p>Algae present an exciting avenue for biofuel production. They grow quickly, can thrive in various environments, and yield large amounts of oil that can be converted into biodiesel. In addition, algae can absorb carbon dioxide, helping to mitigate climate change. How amazing is it that we can utilize nature’s own mechanisms to reduce greenhouse gases?</p>
+
+<p>Research into algae biofuels is ongoing and promising. Companies are investing in technologies to efficiently cultivate and harvest algae for energy. The more we explore algae’s potential, the closer we get to a sustainable energy solution that harmonizes with the Earth. Isn’t it inspiring to dream about a future powered by such a versatile resource?</p>
+
+<h2>The Future of Energy Storage</h2>
+
+<h3>Advances in Battery Technology</h3>
+
+<p>Battery technology is advancing at a remarkable pace. New chemistries and designs are increasing the energy density of batteries, making them last longer. Imagine a battery that charges quickly, holds more energy, and is less costly to produce. These innovations are making energy storage more accessible to everyone.</p>
+
+<p>In addition, <strong>solid-state batteries</strong> hold great promise. Unlike traditional lithium-ion batteries, solid-state batteries can reduce the risk of fires and improve longevity. As these technologies develop, they may redefine how we store energy in our everyday lives.</p>
+
+<h3>Supercapacitors and Flywheels</h3>
+
+<p>Supercapacitors offer instant energy release, making them ideal for applications requiring quick bursts of power. They charge and discharge much faster than traditional batteries. This can be particularly useful for balancing loads in energy grids, helping to manage fluctuations in supply and demand.</p>
+
+<p>Flywheel energy storage is another innovative solution. By using a rotating mass, flywheels can store energy and release it when required. This technology can be extremely efficient and has a long lifespan. How incredible would it be to think about energy stored in a spinning wheel?</p>
+
+<h3>Hydrogen Energy Storage</h3>
+
+<p>Hydrogen energy storage is gaining traction as an effective solution. By converting surplus electricity into hydrogen, we can store energy for later use. This process, called electrolysis, produces clean hydrogen that can fuel vehicles or generate power through fuel cells. Isn’t it fascinating to know that we can harness electricity and store it in such a flexible form?</p>
+
+<p>Moreover, hydrogen has the potential for large-scale storage solutions. It can be easily transported and utilized in various industries. As more research is conducted in this field, the vision of a hydrogen-powered future becomes more achievable. Would it not be remarkable to tap into such a clean energy source?</p>
+
+<h2>Policy and Economic Implications</h2>
+
+<h3>Government Incentives and Subsidies</h3>
+
+<p>Government incentives play a crucial role in promoting renewable energy adoption. Many countries offer tax credits, grants, or feed-in tariffs to encourage investment in these technologies. These programs make clean energy more attractive for developers and consumers alike. Why not take advantage of such opportunities for a cleaner future?</p>
+
+<p>Such incentives can also stimulate job creation in the renewable energy sector. As more projects are initiated, there will be a growing demand for skilled workers. The resulting economic activities can boost local communities and contribute to sustainable development. Isn’t it inspiring to envision a future built on clean energy with opportunities for many?</p>
+
+<h3>Investment Trends in Renewable Energy</h3>
+
+<p>Investment in renewable energy is on the rise. As concerns about climate change grow, more investors are turning to clean technologies. Funds channeled into renewable ventures contribute to a greener economy. The growing popularity of green bonds is making it easier for projects to attract financing.</p>
+
+<p>Furthermore, corporations are beginning to prioritize sustainability. Their investments can accelerate the transition to renewable energy sources. By engaging in eco-friendly practices, companies can enhance their brand image while contributing to global sustainability. Isn’t it refreshing to see a shift in how businesses view their role in protecting the environment?</p>
+
+<h3>International Collaboration and Agreements</h3>
+
+<p>International cooperation is vital for addressing climate change and advancing renewable energy. Countries are currently forming partnerships to share technology and resources. Agreements, like the <strong>Paris Agreement</strong>, emphasize the importance of collective action in combating climate issues. Doesn’t it make sense to unite in the fight for a cleaner planet?</p>
+
+<p>As nations work together, we see increased sharing of knowledge and best practices. Such collaborations can enable developing countries to access renewable technology more easily. Ultimately, global cooperation not only benefits the environment but also promotes economic growth. How hopeful it is to consider what we can accomplish together!</p>
+
+<h2>Overcoming Challenges in Renewable Energy Adoption</h2>
+
+<h3>Addressing Intermittency Issues</h3>
+
+<p>Intermittency poses a challenge to renewable energy sources like solar and wind. They do not always produce energy consistently. However, advancements in storage technologies help mitigate this issue. By storing excess energy when production is high, we can release it when demand spikes. Isn't it amazing how technology can solve issues that once seemed daunting?</p>
+
+<p>Additionally, diversifying energy production can safeguard against supply disruptions. By using a mix of renewables, we can create a more stable energy system. With such an approach, fluctuations in one type of energy can be balanced by another, creating harmony in our energy needs.</p>
+
+<h3>Infrastructure and Grid Modernization</h3>
+
+<p>Modernizing energy infrastructure is essential for integrating renewable resources. Aging power grids need upgrades to handle the diverse nature of renewables. Smart grids, utilizing digital technology, can improve energy management. They allow for better communication between producers and consumers, enhancing overall system efficiency. Wouldn’t it be fantastic to have a grid that works seamlessly to deliver clean energy?</p>
+
+<p>Moreover, investments in transmission networks are critical. These networks must connect remote renewable energy plants to urban areas. By upgrading pathways for energy flow, we can ensure reliable access to greener energy. Isn't it encouraging to think about the potential for progress in energy distribution?</p>
+
+<h3>Public Perception and Education</h3>
+
+<p>Public perception heavily influences renewable energy adoption. How do we engage communities in clean energy initiatives? Education is key. Raising awareness about the benefits of renewable energy can foster acceptance and excitement. When people understand how renewables can improve their lives, they are more likely to embrace change.</p>
+
+<p>Furthermore, community involvement in energy projects builds a sense of ownership. When individuals see local benefits, they become advocates for renewable energy. Isn't it inspiring to think about the collective effort toward a sustainable future?</p>
+
+            
+
+
+            <br><br> <p>
+                
+
+        
+
+
+<br><br>
+        
+        </p>
+
+        
+
+        
+
+
+             
+           <br> <p>
+            <div class="next">
+       Related article: <a href="https://wolhun.github.io/business-blog/google-my-business-optimization-guide.html">Read more</a>
+    </div>
+       </p>
+        </div>
+    </div>
+    
+
+    <div class="author-box">
+     
+        <div class="info">
+            <h3>James Warren</h3>
+            <p>Senior Copywriter</p>
+            <p>James Warren is a seasoned copywriter with a specialized expertise in optimizing Google My Business to amplify online visibility. With a keen understanding of local SEO strategies and a knack for crafting compelling content, James helps businesses enhance their digital footprint and attract more local clientele. His results-driven approach and deep knowledge of Google's ever-evolving algorithms have made him a trusted advisor for businesses looking to stand out in competitive markets.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <h3>Daily Dose of News</h3>
+                <p>&copy; 2024, All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Legal Stuff</h3>
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social Media</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    // Select all anchor tags within the div with class 'next'
+    const links = document.querySelectorAll('div.next a');
+
+    // Iterate over each link
+    links.forEach(link => {
+        let href = link.getAttribute('href');
+
+        // Check if href is valid and does not end with .html or any other file extension
+        if (href && !href.endsWith('.html') && !href.match(/\.\w+$/)) {
+            // Add .html extension
+            href += '.html';
+            link.setAttribute('href', href);
+        }
+    });
+});
+
+ </script>
+ 
+</body>
+</html>
