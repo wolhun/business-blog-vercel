@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hva du kan forvente fra PC Mobile Service mens du venter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="/">Latest News</a></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#authors">News</a></li>
+                <li><a href="#authors">Categories</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="https://image-cloud-server.netlify.app/image_Android-Phone-Repair.jpg" class="header-image">
+        <h1>Hva du kan forvente fra PC Mobile Service mens du venter</h1>
+        <div class="author">
+           
+            <span>By Marius Olsvik</span> 
+            <span class="meta"> · 08 September 2024 · 5 min read</span>
+        </div>
+ 
+
+
+       
+        <div class="content">
+            <hr>
+             <h2>Innledende konsultasjon</h2>
+
+<p>Når du ankommer PC Mobile Service, vil du først bli møtt av et vennlig team. <strong>Mottakelsen er viktig</strong>; den setter tonen for hele besøket ditt. Du vil bli bedt om å sjekke inn, hvor de registrerer informasjonen din og en oversikt over problemene med enheten din. Det er alltid en god idé å ha en grov idé om problemene du opplever. Jo mer informasjon du gir, jo lettere blir det for teknikeren å hjelpe deg.</p>
+
+<p>Etter sjekk-in, vil en tekniker begynne å vurdere enheten din. De vil stille spørsmål om atferden til enheten for å forstå hva som kan være galt. Dette inkluderer å spørre deg om når problemene startet og om det har vært noen spesifikke hendelser, for eksempel oppdateringer eller nedlastinger. Teknikeren vil også utføre en visuell inspeksjon av enheten. Når vurderingen er fullført, vil de gi deg en <strong>estimert tidsramme og kostnad</strong> for reparasjonen. </p>
+
+<h2>Diagnostiske prosedyrer</h2>
+
+<p><strong>Diagnostikk er helt essensiell</strong> for å forstå hva som feiler enheten din. Først blir det gjort en programvarediagnose som kan avdekke problemer knyttet til systemfeil eller programvarekonflikter. Dette kan inkludere å sjekke for virus eller skadelig programvare som kan påvirke ytelsen. Det tar vanligvis ikke lang tid å fullføre denne prosessen, og du vil bli informert om eventuelle funn.</p>
+
+<p>Når programvareproblemer er utelukket, vil teknikeren se nærmere på hardwaren. De vil inspisere komponenter som batteri, skjerm og interne deler for å identifisere fysiske skader eller feil. <strong>Kundetilbakemeldinger er også verdifulle</strong> i denne fasen. Lyder, lukter eller merkelige oppføringer kan gi teknikerne ledetråder om hva som er galt. Eventuelle problemer som vurderes vil bli notert og sendt til deg som en del av diagnostikkrapporten.</p>
+
+<h2>Kommunikasjon under tjenesten</h2>
+
+<p><strong>Å holde deg informert</strong> er en prioritet når du besøker PC Mobile Service. Du vil motta oppdateringer om fremdriften på reparasjonen din. Teknisk personell vil kontakte deg dersom det oppstår forsinkelser eller hvis det oppdages flere problemer underveis. Dette sikrer at du alltid er oppdatert om hva som skjer med enheten din. </p>
+
+<p>Skulle det dukke opp flere funn under diagnosticeringen, vil du umiddelbart bli informert. Du får muligheten til å <strong>godkjenne eventuelle ekstra reparasjoner</strong> eller tjenester før de begynner. Dette gir deg kontroll over hva som skjer, samt en sjanse til å stille spørsmål om hvorfor ekstra arbeider kan være nødvendig. Det er alltid bedre å vite eksakt hva reparasjonen vil koste, så du slipper overraskelser når du betaler.</p>
+
+<h2>Onsite fasiliteter</h2>
+
+<p>Å vente på reparasjonen kan være en ubehagelig opplevelse, men PC Mobile Service har gjort sitt beste for å gjøre det mer komfortabelt for deg. <strong>Venteområdet er utformet for å være koselig</strong>. Du vil finne komfortable stoler og et beroligende miljø. Dette gjør det lettere å slappe av mens du venter.</p>
+
+<p>I tillegg tilbyr de <strong>gratis snacks og drikke</strong>. Du kan nyte en kopp kaffe eller kanskje noe kaldt mens du sitter og venter. Flere steder tilbyr også gratis Wi-Fi, slik at du kan surfe på nettet eller komme i gang med arbeidet ditt. Det vil også være tilgjengelige ladestasjoner for enheter, slik at du kan holde telefonen din oppladet. Komfort og bekvemmelighet er nøkkelen for en positiv opplevelse hos Snapfix. </p>
+
+<h2>Bekvemmelighet og effektivitet</h2>
+
+<p>Avgjørelse av ventetid er en viktig del av opplevelsen. <strong>Gjennomsnittlig ventetid</strong> avhenger av kompleksiteten i problemet, men teamet jobber hardt for å holde ventetiden kort. Vanligvis kan små reparasjoner utføres raskt, mens mer komplekse problemer kan ta lengre tid. Du vil alltid få en estimert ventetid ved sjekk-inn.</p>
+
+<p>Snapfix tilbyr også <strong>express tjenester</strong>. Dette er ideelt for kunder som har akutte problemer og trenger en rask løsning. Represjon av hastesaker blir prioritert, og du kan be om en oppgradering for å bli behandlet først. Den raske servicen gir deg ikke bare pålitelighet, men også trygghet når ting går galt. De målrettede ressursene setter kunden i første rekke.</p>
+
+<h2>Sluttkontroller og kvalitetssikring</h2>
+
+<p>Når reparasjonen er fullført, er det flere viktige steg for å bekrefte at alt fungerer som det skal. <strong>Validering av reparasjonsresultater</strong> vil sikre at alle problemer er blitt løst. Teknikeren vil utføre endelige tester for å sjekke at enheten fungerer optimalt. Det er en del av kvalitetskontrollen som Snapfix står for.</p>
+
+<p>Etter at alle tester er fullført, vil de merke eventuelle endringer og oppdateringer skriftlig. Teknisk team vil også sørge for at du er fornøyd med resultatene. <strong>Kundens tilfredshet betyr alt</strong>; det er det som skaper lojale kunder. Du vil bli spurt om din opplevelse og veiledning, som bidrar til kontinuerlig forbedring.</p>
+
+<h2>Betalings- og hentesystem</h2>
+
+<p>Når reparasjonen er bekreftet, vil neste steg være å gjennomgå tjenestene som er utført. <strong>Du vil få en detaljert oversikt</strong> over hva som ble gjort, samt kostnader knyttet til hver del av reparasjonen. Det er viktig at du har full oversikt, og du kan stille spørsmål før betaling.</p>
+
+<p>Betaling skjer raskt, og du vil kunne velge mellom flere betalingsmetoder. Etter betaling vil du bli informert om <strong>garantien og etter-service støtten</strong>. Snapfix ønsker å sørge for at du er informert om hva du skal gjøre hvis noe skulle gå galt etter at du har forlatt butikken. Dette kan innebære støtte for spørsmål eller problemer som måtte oppstå senere. Din tilfredshet er alltid en prioritet.</p>
+
+            
+
+
+            <br><br> <p>
+                
+
+        
+
+
+        <a href="https://snapfix.no/">https://snapfix.no/</a><br>
+
+
+
+<br><br>
+        
+        </p>
+
+        
+        <p><p>Mobilreparasjon og PC-service i Oslo og Drammen. Har du knust iPhone skjerm? Snapfix tilbyr drop-in skjermbytte på timen.
+<br><br>
+Knust iPad? Normalt tar det 1-3 dager for glassbytte på iPad. Vi tilbyr også ekspresshjelp innen 24t.
+<br><br>
+Du får også andre mobilmerker reparert som Sony, Samsung og Huawei. Vi tar i mot alle form for skader, enten du har knust skjerm, trenger nytt batteri, fått ødelagt kamera, høyttaler eller mikrofonen din skurrer. Vi reparerer mobilen på dagen.
+<br><br>
+Har du problemer med PCen din? Du får muligheten til å få din PC eller MAC reparert av profesjonelle i løpet av kort tid! Snapfix er en totalleverandør av datatjenester: PC-hjelp, PC-reparasjoner og PC-service. Vi kan hjelpe deg med de fleste PC-problemer som virus, treg PC o.l</p></p>
+    
+
+        
+
+
+             
+           <br> <p>
+            <div class="next">
+       Related article: <a href="https://wolhun.github.io/business-blog/mobilreparasjon.html">Read more</a>
+    </div>
+       </p>
+        </div>
+    </div>
+    
+
+    <div class="author-box">
+     
+        <div class="info">
+            <h3>Marius Olsvik</h3>
+            <p>Senior Copywriter</p>
+            <p>Marius Olsvik is a seasoned copywriter with a specialized focus on fast mobile and PC repair services in Oslo and Drammen. Leveraging his expertise, Marius has adeptly crafted compelling content for Snapfix’s drop-in repair services, ensuring clients are informed about quick solutions for broken iPhones, iPads, and PCs. His deep understanding of mobile and PC repair, particularly in areas like Majorstuen and Sandvika, enables him to address iPhone battery issues and broken iPad screens with precision and clarity, making him an invaluable asset to the repair industry in Norway.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <h3>Daily Dose of News</h3>
+                <p>&copy; 2024, All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Legal Stuff</h3>
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social Media</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    // Select all anchor tags within the div with class 'next'
+    const links = document.querySelectorAll('div.next a');
+
+    // Iterate over each link
+    links.forEach(link => {
+        let href = link.getAttribute('href');
+
+        // Check if href is valid and does not end with .html or any other file extension
+        if (href && !href.endsWith('.html') && !href.match(/\.\w+$/)) {
+            // Add .html extension
+            href += '.html';
+            link.setAttribute('href', href);
+        }
+    });
+});
+
+ </script>
+ 
+</body>
+</html>
