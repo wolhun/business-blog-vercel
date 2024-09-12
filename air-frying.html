@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7. Top Low-Calorie Meals That Don't Compromise on Flavor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="/">Latest News</a></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#authors">News</a></li>
+                <li><a href="#authors">Categories</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="https://image-cloud-server.netlify.app/image_2.jpg" class="header-image">
+        <h1>7. Top Low-Calorie Meals That Don't Compromise on Flavor</h1>
+        <div class="author">
+           
+            <span>By Ethan Caldwell</span> 
+            <span class="meta"> · 12 September 2024 · 5 min read</span>
+        </div>
+ 
+
+
+       
+        <div class="content">
+            <hr>
+             <h2>Grilled Chicken and Vegetable Skewers</h2>
+
+<p>Grilled chicken and vegetable skewers make for a delightful low-calorie meal. They combine juicy chicken with a variety of colorful vegetables, making them visually appealing. <strong>The ingredients typically include chicken breast, bell peppers, onions, cherry tomatoes, and zucchini.</strong> A standard serving can offer about 220 calories, depending on the quantity of each component. This dish is high in protein, which is essential for muscle maintenance and keeps you feeling full for longer.</p>
+
+<p>Preparing the skewers is straightforward and can be an enjoyable process. You'll start by cutting the chicken and vegetables into bite-sized pieces. After marinating them in your favorite seasoning blend for at least 30 minutes, you can thread them onto skewers, alternating between chicken and veggies. Place the skewers on a preheated grill for about 10 to 15 minutes, turning occasionally. Remember to check the chicken reaches an internal temperature of 165°F for safety. </p>
+
+<p>Enhancing flavor is critical when creating low-calorie meals. <strong>Using a marinade made from balsamic vinegar, garlic, and herbs can elevate the taste without adding calories.</strong> You may also sprinkle some paprika or lemon juice right before grilling to give it a fresh zing. Experimenting with different spices like cumin or onion powder can also provide unique flavors. </p>
+
+<p>Pairing these skewers with a light dip like tzatziki or a fresh salad can create a complete meal. You may want to consider serving them alongside a quinoa salad for added nutrients. This combination can make a real feast, allowing you to enjoy the flavors without compromising on health.</p>
+
+<h2>Quinoa and Black Bean Stuffed Peppers</h2>
+
+<p>Quinoa and black bean stuffed peppers offer a hearty and colorful dish filled with nutrition. Each pepper is a vessel packed with fiber, protein, and essential vitamins. <strong>A typical serving contains around 250 calories, mainly from the quinoa and beans, making it a satiating option.</strong> Choosing bell peppers not only enhances the flavor but also adds vibrant colors to your meal, making it visually stimulating.</p>
+
+<p>To prepare this dish, begin by cooking quinoa according to package directions. While the quinoa cooks, you can sauté onions, garlic, and spices in a skillet. Once cooked, mix your quinoa with black beans, corn, and diced tomatoes. Then, hollow out the peppers and stuff them with the mixture. Bake in the oven at 375°F for about 30 minutes until the peppers are tender. This straightforward method ensures you pack maximum flavor into each bite.</p>
+
+<p>The combination of quinoa and black beans brings many health benefits. <strong>Quinoa is a complete protein, which means it contains all nine essential amino acids.</strong> This makes it one of the best plant-based protein sources. On the other hand, black beans are rich in fiber, which aids digestion and contributes to heart health. Together, they make a nourishing meal that supports a healthy lifestyle.</p>
+
+<p>For serving suggestions, you can drizzle lime juice over the stuffed peppers for an added zest. Pairing them with avocado slices adds healthy fats, rounding out the meal. You could even prepare a simple avocado lime dressing to enhance the dish's flavors without increasing calories.</p>
+
+<h2>Cauliflower Fried Rice</h2>
+
+<p>Cauliflower fried rice is a fantastic low-calorie alternative to traditional fried rice. This dish is made by finely chopping cauliflower to resemble rice grains. <strong>With just about 150 calories per cup, it allows you to enjoy flavors without the carbs.</strong> Adding vegetables like peas, carrots, and scallions boosts the nutrient density and adds a crunch to every bite.</p>
+
+<p>To prepare cauliflower fried rice, start by shredding cauliflower using a food processor or a box grater. Heat up a bit of oil in a large skillet and sauté onions and garlic first. Then, add the cauliflower and your desired vegetables, stirring frequently. You can season with soy sauce or liquid aminos and cook until golden and tender. This quick method means you can have a healthy dish on your table in under 20 minutes.</p>
+
+<p>Flavoring techniques can significantly enhance this dish's profile. <strong>Incorporating fresh ginger or sesame oil can bring an Asian flair without adding extra calories.</strong> Tamari or coconut aminos can offer a gluten-free option with a savory taste. Additionally, a sprinkle of red pepper flakes can give the rice a bit of heat for those who enjoy a spicy kick. </p>
+
+<p>For extra nutrients, you might consider adding eggs for some protein. Scramble them in the pan before adding the cauliflower to ensure they blend well. Another option is tossing in spinach or kale toward the end of the cooking process for added vitamins and minerals.</p>
+
+<h2>Spaghetti Squash with Marinara Sauce</h2>
+
+<p>Spaghetti squash is an ideal low-calorie substitute for pasta lovers. When cooked, it naturally separates into strands resembling spaghetti. <strong>A serving of cooked spaghetti squash contains about 42 calories, making it a great base for various sauces.</strong> It pairs well with marinara, adding rich flavor without excessive calories.</p>
+
+<p>To prepare, slice the spaghetti squash in half and remove the seeds. Place the halves on a baking sheet, cut side down, and bake at 400°F for around 40 minutes. Once done, you can scrape out the strands with a fork, creating a perfect "pasta" texture. Meanwhile, prepare a simple marinara sauce by simmering diced tomatoes, garlic, and herbs in a saucepan. Combine the two once cooked, and you'll have a satisfying, low-calorie meal ready.</p>
+
+<p>Using spaghetti squash comes with benefits beyond just being low in calories. <strong>It is rich in vitamins A and C, promoting healthy skin and immune function.</strong> The fiber content in spaghetti squash can aid digestion and keep you feeling full longer. This dish lets you enjoy a classic Italian favorite without the heavy carbs that traditional pasta brings.</p>
+
+<p>You may also want to explore alternative sauce options. Adding a basil pesto can bring a flavorful twist, or even a creamy avocado sauce can be a healthy alternative. Trying different sauces will keep your meals exciting and tailored to your palate.</p>
+
+<h2>Greek Yogurt Chicken Salad</h2>
+
+<p>Greek yogurt chicken salad serves as a delicious and healthy meal option. By swapping mayonnaise for Greek yogurt, you reduce calories while increasing protein content. <strong>Typically, a serving contains around 200 calories, making it a satisfying yet light choice.</strong> This twist keeps the dish creamy and flavorful without the guilt.</p>
+
+<p>To make the salad, start by shredding cooked chicken breast into a mixing bowl. Then, mix in Greek yogurt, mustard, diced celery, and green onions. Season with salt, pepper, and any herbs you enjoy, like dill or parsley. Allow it to chill for at least 30 minutes to let flavors meld, then serve as a sandwich filling or on a bed of greens.</p>
+
+<p>To enhance flavor, consider adding ingredients that bring freshness. <strong>Chopped apples or grapes can introduce a sweet contrast to the savory elements.</strong> They add crunch and an unexpected burst of flavor. Additionally, to kick things up a notch, you could mix in some curry powder for an Indian-inspired twist. Not only this, you might discover unique recipe inspirations at <a href="https://www.georgepurton.com/">George Purton</a> to elevate your culinary skills.</p>
+
+<p>Suggested add-ins include nuts like walnuts or almonds for some healthy fats and a satisfying texture. A sprinkle of dried cranberries offers a sweet touch. Feel free to experiment with different spices and add-ins to make this dish your own.</p>
+
+<h2>Zucchini Noodles with Pesto</h2>
+
+<p>Zucchini noodles, or "zoodles," bring a fresh take on Italian pasta. They're low in calories and carbohydrates, making them an ideal choice for those looking to eat lighter. <strong>Typically, one cup of zucchini noodles contains about 20 calories, setting a fantastic base for rich and vibrant sauces.</strong> Pairing them with pesto creates a delightful combination that you won't soon forget.</p>
+
+<p>To prepare zucchini noodles, you can use a spiralizer or a vegetable peeler to create long, thin noodles. Sauté them in a pan with a drizzle of olive oil for just a few minutes until slightly tender. <strong>Combine the zoodles with fresh pesto made from basil, garlic, nuts, and olive oil for a simple yet tasty dish.</strong> This quick preparation allows for a nutritious meal in under 15 minutes.</p>
+
+<p>Making the perfect pesto can significantly impact the meal's flavor. <strong>Using fresh basil is key, as it gives a vibrant taste that dried herbs can't replicate.</strong> Adding a splash of lemon juice can brighten up the pesto, enhancing its fresh notes. For variations, consider replacing nuts like pine nuts with walnuts or almonds, which can add a different texture and flavor.</p>
+
+<p>For added flair, you might sprinkle Parmesan cheese on top or toss in sun-dried tomatoes for an extra boost. Chopped olives can introduce a salty kick, while crushed red pepper flakes can add a bit of heat. These toppings can elevate your zoodles while keeping the dish light and satisfying.</p>
+
+<h2>Baked Salmon with Lemon and Asparagus</h2>
+
+<p>Baked salmon with lemon and asparagus is a classic combination that never disappoints. This dish is simple to prepare yet rewarding and full of flavor. <strong>A serving typically has around 350 calories while being rich in healthy omega-3 fatty acids, essential for heart health.</strong> The combination of fish and vegetables makes it an easy meal to throw together any night of the week.</p>
+
+<p>To prepare, start by preheating your oven to 400°F. Place salmon fillets on a baking sheet lined with parchment paper. Arrange asparagus alongside, then drizzle both with olive oil and lemon juice. Season with salt, pepper, and any herbs you like, such as dill or thyme. Bake for about 15 to 20 minutes, until the salmon flakes easily with a fork, ensuring it’s cooked through yet moist.</p>
+
+<p>Tips for baking perfect salmon are crucial for achieving the best flavor. <strong>Keeping the skin on helps lock in moisture and adds an extra layer of flavor.</strong> You can also experiment with different marinades—honey mustard, soy sauce, or even a bit of maple syrup can transform the taste! Allowing the salmon to rest for a few minutes after baking lets the juices redistribute, making it even more tender.</p>
+
+<p>For serving and pairing suggestions, consider a side of brown rice or quinoa for a complete meal. Including a mixed greens salad can add freshness, complementing the flavors of the salmon. A glass of lemon-infused water or herbal tea can round out your meal perfectly, keeping it light yet satisfying.</p>
+
+            
+
+
+            <br><br> <p>
+                
+
+        
+
+
+<br><br>
+        
+        </p>
+
+        
+
+        
+
+
+             
+           <br> <p>
+            <div class="next">
+       Related article: <a href="https://wolhun.github.io/business-blog/air-frying.html">Read more</a>
+    </div>
+       </p>
+        </div>
+    </div>
+    
+
+    <div class="author-box">
+     
+        <div class="info">
+            <h3>Ethan Caldwell</h3>
+            <p>Senior Copywriter</p>
+            <p>Ethan Caldwell is a seasoned copywriter with a passion for promoting healthier lifestyles through innovative culinary techniques. Specializing in air frying, Ethan advocates for its health benefits and versatility in creating nutritious, low-calorie meals. With expertise in crafting easy meal prep solutions for conditions like fatty liver disease and diabetes, his work emphasizes quick, nutrient-rich, and guilt-free comfort foods. Ethan’s writing offers practical tips and flavorful recipes designed to support wellbeing without sacrificing taste.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <h3>Daily Dose of News</h3>
+                <p>&copy; 2024, All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Legal Stuff</h3>
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social Media</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    // Select all anchor tags within the div with class 'next'
+    const links = document.querySelectorAll('div.next a');
+
+    // Iterate over each link
+    links.forEach(link => {
+        let href = link.getAttribute('href');
+
+        // Check if href is valid and does not end with .html or any other file extension
+        if (href && !href.endsWith('.html') && !href.match(/\.\w+$/)) {
+            // Add .html extension
+            href += '.html';
+            link.setAttribute('href', href);
+        }
+    });
+});
+
+ </script>
+ 
+</body>
+</html>
