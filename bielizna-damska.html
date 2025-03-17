@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dlaczego warto inwestować w bieliznę z naturalnych materiałów</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="/">Latest News</a></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#authors">News</a></li>
+                <li><a href="#authors">Categories</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="https://image-cloud-server.netlify.app/image_sweet-blossoms-doylestown.jpg" class="header-image">
+        <h1>Dlaczego warto inwestować w bieliznę z naturalnych materiałów</h1>
+        <div class="author">
+           
+            <span>By Janusz Nowak</span> 
+            <span class="meta"> · 17 March 2025 · 5 min read</span>
+        </div>
+ 
+
+
+       
+        <div class="content">
+            <hr>
+             <h2>Korzyści zdrowotne</h2>
+
+<p>Inwestowanie w bieliznę z naturalnych materiałów przynosi liczne korzyści zdrowotne. <strong>Przepuszczalność powietrza</strong> to jeden z kluczowych atutów, który warto podkreślić. Naturalne tkaniny, takie jak bawełna, pozwalają skórze oddychać, co z kolei zapobiega nadmiernemu poceniu się. W przeciwieństwie do syntetyków, nie zatrzymują one wilgoci, co może prowadzić do podrażnień lub infekcji. Bardzo ważne jest, aby wybierać bieliznę, która zapewnia komfort przez cały dzień. W takich przypadkach warto zwrócić uwagę na ofertę związaną z <a href="https://e-marilyn.pl/">bielizna</a>, która może zaoferować wysokiej jakości produkty.</p>
+
+<p><strong>Wpływ na skórę</strong> to kolejny aspekt zdrowotny. Naturalne materiały są znacznie łagodniejsze dla naszej skóry, redukując ryzyko wystąpienia alergii czy reakcji zapalnych. Używając organicznej bawełny czy lnu, ograniczamy kontakt z substancjami chemicznymi używanymi w procesie produkcji tkanin syntetycznych. Osoby z wrażliwą skórą szczególnie powinny zwrócić uwagę na materiał, z którego wykonana jest bielizna. Stosowanie naturalnych włókien pozytywnie wpływa na ogólny komfort noszenia.</p>
+
+<p>Naturalna bielizna charakteryzuje się także <strong>hiperalergicznością</strong>, co oznacza, że rzadziej wywołuje reakcje alergiczne. Wiele osób nie zdaje sobie sprawy, iż materiał, który noszą, może wpływać na ich samopoczucie. Naturalne tkaniny nie zawierają toksycznych substancji chemicznych, co czyni je odpowiednim wyborem dla osób, które są podatne na alergie. To kluczowy element, jeśli zależy nam na zdrowiu i komforcie.</p>
+
+<h2>Komfort noszenia</h2>
+
+<p>Kiedy mówimy o bielizny, <strong>komfort noszenia</strong> jest absolutnie priorytetowy. Naturalne materiały doskonale dopasowują się do ciała, co sprzyja wygodzie. W przeciwieństwie do syntetyków, które mogą być sztywne lub niewygodne, naturalne włókna są elastyczne i miękkie. Umożliwiają swobodne ruchy, co jest niezwykle ważne w codziennym użytkowaniu. Wybierając bieliznę naturalną, odczujesz różnicę w porównaniu do produktów z syntetyków.</p>
+
+<p>Dodatkowym atutem jest ich zdolność do <strong>regulacji temperatury</strong>. Naturalne materiały absorbują wilgoć i odprowadzają ją na zewnątrz, co pozwala skórze pozostać suchą. Dzięki temu bielizna jest idealna zarówno latem, jak i zimą. W chłodniejsze dni potrafią zatrzymywać ciepło, co zwiększa komfort noszenia. Warto więc zainwestować w bieliznę, która zapewnia optymalne warunki skórze przez cały rok.</p>
+
+<p>Nie można też zapomnieć o <strong>miękkości i przyjemności dotyku</strong>. Naturalne tkaniny, takie jak bawełna czy jedwab, są wyjątkowo przyjemne w dotyku, co sprawia, że mamy ochotę je nosić. Często bielizna wykonana z syntetyków może być szorstka lub drażniąca. Kupując bieliznę z naturalnych materiałów, możemy być pewni, że doświadczenie noszenia będzie komfortowe. Rozważając zakupy, z pewnością warto zwrócić uwagę na te właściwości.</p>
+
+<h2>Ekologiczne aspekty</h2>
+
+<p>Inwestowanie w bieliznę z naturalnych materiałów wspiera również aspekty ekologiczne. <strong>Zrównoważona produkcja</strong> jest kluczowym zagadnieniem w dzisiejszym przemyśle odzieżowym. Wybierając naturalne włókna, wspieramy metody produkcji, które są bardziej przyjazne dla środowiska. Rolnictwo ekologiczne, z którego pochodzą materiały, nie stosuje pestycydów ani sztucznych nawozów, co minimalizuje zanieczyszczenie gleby i wód. To wymaga większej odpowiedzialności, ale przynosi korzyści dla planety.</p>
+
+<p><strong>Biodegradowalność materiałów</strong> to kolejny ważny aspekt. Naturalne włókna, w przeciwieństwie do syntetyków, rozkładają się znacznie szybciej po zakończeniu ich użytkowania. Dzięki temu zmniejszamy ilość odpadów w ekosystemie. Niezbędne jest, aby konsumenci byli świadomi tego, jak ich wybory wpływają na środowisko. Wspierając bieliznę z naturalnych materiałów, przyczyniamy się do ochrony naszej planety.</p>
+
+<p>Kolejnym korzystnym efektem jest <strong>zmniejszanie śladu węglowego</strong>. Produkcja bielizny z naturalnych materiałów generuje mniejszą emisję CO2. Wybierając ekologiczne alternatywy, wpływamy na globalne ocieplenie oraz zmiany klimatyczne. Świadomość ekologiczna wśród konsumentów rośnie, co skłania marki do wprowadzania zrównoważonych praktyk. Nasze decyzje przyczyniają się do lepszej przyszłości dla wszystkich.</p>
+
+<h2>Trwałość i jakość</h2>
+
+<p>Jednym z powodów, dla których warto inwestować w bieliznę z naturalnych materiałów, jest ich <strong>trwałość i jakość</strong>. W porównaniu do syntetyków, naturalne włókna są znacznie bardziej odporne na zużycie. Osoby, które noszą taką bieliznę, mogą cieszyć się nią przez dłuższy czas. Odpowiednia pielęgnacja może dodatkowo przedłużyć ich żywotność. Oznacza to, że jednorazowa inwestycja może przynieść długofalowe korzyści.</p>
+
+<p>Naturalne materiały, takie jak bawełna czy len, zachowują swoje właściwości nawet po wielu praniach. <strong>Długowieczność materiałów</strong> sprawia, że są one bardziej opłacalne w dłuższym okresie. Zamiast regularnie kupować nowe produkty, możemy korzystać z jednego, wysokiej jakości elementu garderoby. To nie tylko oszczędność, ale także zmniejszenie ilości odpadów, co jest korzystne dla planety.</p>
+
+<p>Wpływ na <strong>koszty użytkowania</strong> jest znaczący. Choć początkowa cena bielizny z naturalnych materiałów może być wyższa, ich długa żywotność sprawia, że inwestycja zwraca się. Oszczędzając pieniądze w dłuższej perspektywie, przyczyniamy się również do bardziej zrównoważonej konsumpcji. To rozsądny wybór zarówno dla portfela, jak i dla środowiska.</p>
+
+<h2>Wpływ na modę i styl</h2>
+
+<p>Naturalne materiały mają również znaczący wpływ na <strong>modę i styl</strong>. Ich uniwersalność sprawia, że pasują do wielu różnych stylizacji. Można je łączyć z innymi ubraniami, tworząc klasyczne i eleganckie zestawy. Naturalne włókna często charakteryzują się ponadczasowym wyglądem, co czyni je idealnym wyborem dla osób ceniących sobie elegancję. Wydaje się, że moda wkracza w kierunek, w którym jakość i dbałość o środowisko mają kluczowe znaczenie.</p>
+
+<p>Co więcej, <strong>zaangażowanie marek w ekologię</strong> rośnie. Coraz więcej producentów stawia na zrównoważone praktyki, wprowadzając naturalne materiały do swoich linii bielizny. To pozytywna zmiana, która wpływa na świadomość konsumentów. Klienci często wybierają marki, które są odpowiedzialne społecznie, co skłania inne firmy do przemyśleń nad swoją produkcją. To zjawisko może przyczynić się do ogólnej poprawy standardów w przemyśle odzieżowym.</p>
+
+<p>Warto również zauważyć, że <strong>innowacyjne zastosowania modowe</strong> naturalnych materiałów stają się coraz bardziej popularne. Projektanci eksperymentują z nowymi technikami i stylami, tworząc niepowtarzalne kolekcje. Naturalne tkaniny przyciągają uwagę, a ich wyjątkowe właściwości sprawiają, że są poszukiwane na rynku. W ten sposób bielizna z naturalnych materiałów wkracza na wyższy poziom stylu i estetyki.</p>
+
+<h2>Popularne rodzaje naturalnych materiałów</h2>
+
+<p>Wybór bielizny z naturalnych materiałów wiąże się z różnorodnością tkanin. <strong>Bawełna organiczna</strong> jest jedną z najpopularniejszych opcji, cenioną za swoje właściwości oddychające. Jest miękka, komfortowa i dostępna w wielu wariantach kolorystycznych. Dodatkowo, produkcja bawełny organicznej jest przyjazna dla środowiska, co czyni ją idealnym wyborem dla osób dbających o ekologię. To właśnie dzięki niej możemy cieszyć się wygodą na co dzień.</p>
+
+<p>Innym interesującym materiałem jest <strong>len</strong>, który ma wiele właściwości korzystnych dla skóry. Len jest naturalnie chłodzący, co sprawia, że jest idealny na cieplejsze dni. Dodatkowo, jest wyjątkowo trwały i odporny na deformacje. Nosząc bieliznę wykonaną z lnu, można czuć się świeżo i komfortowo przez cały dzień. Jest to doskonała alternatywa dla syntetyków, które mogą być niewygodne w upalne dni.</p>
+
+<p><strong>Jedwab</strong> to kolejny materiał, który zasługuje na uwagę. Ma elegancki wygląd i jest niesamowicie przyjemny w dotyku. Bardzo często stosowany w bieliźnie luksusowej, oferuje odczucie niespotykanej miękkości. Jedwab działa również korzystnie na skórę, pomagając w utrzymaniu jej zdrowego wyglądu. Warto zainwestować w bieliznę z jedwabiu, ponieważ łączy w sobie elegancję z komfortem.</p>
+
+<h2>Praktyczne aspekty zakupu</h2>
+
+<p>Kiedy decydujesz się na zakup bielizny z naturalnych materiałów, warto zwrócić uwagę na <strong>ceny i dostępność</strong>. Choć bielizna ekologiczna może być nieco droższa, jej jakość i długowieczność często wynagradzają tę różnicę. Warto poszukać outletów czy wyprzedaży, które mogą oferować atrakcyjne zniżki na produkty wysokiej jakości. Wiele marek stara się googlować swoich klientów funkcjonalnymi i dostępnymi rozwiązaniami, które ułatwiają zakupy.</p>
+
+<p>Równie istotne są <strong>certyfikaty jakości i autentyczności</strong>. Upewnij się, że produkt pochodzi z wiarygodnego źródła. Szukaj znaków potwierdzających ekologiczne pochodzenie materiałów, takich jak GOTS czy OEKO-TEX. Tego typu certyfikaty świadczą o jakości wyrobów, co ma ogromne znaczenie przy wyborze bielizny. Dokumentacja mówi wiele o świadomej produkcji i dbałości o środowisko.</p>
+
+<p>Na koniec, ważne jest, aby wiedzieć, <strong>jak rozpoznać naturalne materiały</strong>. Przede wszystkim, zwróć uwagę na skład tkaniny. Naturalne materiały będą miały oznaczenie, czy są w 100% bawełniane, lniane lub jedwabne. Dodatkowo, warto sprawdzić gęstość materiału i jego odczucie w dotyku. Zastosowanie naturalnych materiałów powinno być wyczuwalne nawet na etapie zakupu – trzeba po prostu zwracać uwagę na detale.</p>
+
+<h2>Edukacja i świadomość konsumencka</h2>
+
+<p>W dobie rosnącej ekologicznej świadomości, <strong>edukacja i świadomość konsumencka</strong> są niezwykle istotne. Wiele kampanii promocji naturalnej bielizny wpływa na wybory konsumentów. Uświadamiają one ludziom, jak ważne jest inwestowanie w zdrowe i zrównoważone produkty. Dzięki nim coraz więcej osób zaczyna zwracać uwagę na skład materiałów. Warto angażować się w takie inicjatywy, aby promować pozytywne zmiany na rynku.</p>
+
+<p>Mocno zaznacza się także <strong>wpływ społeczności na zmiany rynkowe</strong>. Klienci wspierający ekologiczne marki mają znaczący wpływ na ich popularność i rozwój. Dzięki społecznościom, które promują naturalne produkty, marki stają się bardziej odpowiedzialne za działania, jakie podejmują. Konsumenci mają władzę decydowania o przyszłości rynku bieliźniarskiego. To oni mogą stworzyć popyt na lepsze i bardziej zrównoważone produkty.</p>
+
+<p>Szczególnie istotna jest <strong>rola konsumentów w promowaniu ekologii</strong>. Każdy z nas może przyczynić się do pozytywnych zmian poprzez świadome wybory zakupowe. Wybierając bieliznę z naturalnych materiałów, wysyłamy silny sygnał, że zależy nam na zdrowiu i przyszłości planety. Kluczowe jest, aby na bieżąco informować się o tym, jakie produkty wybieramy i jak wpływają one na nasze życie oraz otoczenie. Współpraca konsumentów z producentami może przynieść korzyści zarówno dla ludzi, jak i dla natury.</p>
+
+            
+
+
+            <br><br> <p>
+                
+
+        
+
+
+<br><br>
+        
+        </p>
+
+        
+
+        
+
+
+             
+           <br> <p>
+            <div class="next">
+       Related article: <a href="https://businessblog.s3.eu-de.cloud-object-storage.appdomain.cloud/bielizna-damska.html">Read more</a>
+    </div>
+       </p>
+        </div>
+    </div>
+    
+
+    <div class="author-box">
+     
+        <div class="info">
+            <h3>Janusz Nowak</h3>
+            <p>Senior Copywriter</p>
+            <p>Janusz Nowak jest doświadczonym copywriterem specjalizującym się w tematykach związanych z modą i komfortem, szczególnie w zakresie damskiej bielizny. Jego wieloletnie doświadczenie w branży pozwala mu tworzyć treści, które pomagają klientom dokonywać świadomych wyborów, z uwzględnieniem najnowszych trendów i indywidualnych potrzeb. Janusz pasjonuje się także doradzaniem, jak kupić bieliznę damską na prezent, co czyni go ekspertem w tworzeniu przewodników, które łączą styl i praktyczność. Dzięki jego poradom, proces zakupu</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <h3>Daily Dose of News</h3>
+                <p>&copy; 2024, All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Legal Stuff</h3>
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social Media</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    // Select all anchor tags within the div with class 'next'
+    const links = document.querySelectorAll('div.next a');
+
+    // Iterate over each link
+    links.forEach(link => {
+        let href = link.getAttribute('href');
+
+        // Check if href is valid and does not end with .html or any other file extension
+        if (href && !href.endsWith('.html') && !href.match(/\.\w+$/)) {
+            // Add .html extension
+            href += '.html';
+            link.setAttribute('href', href);
+        }
+    });
+});
+
+ </script>
+ 
+</body>
+</html>
