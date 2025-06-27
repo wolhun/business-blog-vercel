@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía para Comprender los Diferentes Tipos de Agencias de Marketing Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="/">Latest News</a></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#authors">News</a></li>
+                <li><a href="#authors">Categories</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="https://image-cloud-server.netlify.app/image_digital-marketing.jpg" class="header-image">
+        <h1>Guía para Comprender los Diferentes Tipos de Agencias de Marketing Digital</h1>
+        <div class="author">
+           
+            <span>By Andrés González</span> 
+            <span class="meta"> · 27 June 2025 · 5 min read</span>
+        </div>
+ 
+
+
+       
+        <div class="content">
+            <hr>
+             <h2>Tipos de Agencias de Marketing Digital</h2>
+
+<p>El mundo del marketing digital ha crecido significativamente en las últimas dos décadas. Esto ha dado lugar a una variedad de agencias especializadas que ofrecen servicios a empresas de todos tamaños. Las distintas categorías de agencias permiten a las marcas elegir la mejor opción que se ajuste a sus necesidades. Por esta razón, es crucial conocer las características de cada tipo de agencia para tomar decisiones informadas.</p>
+
+<p>Entre las agencias encontramos las <strong>agencias de marketing digital de servicio completo</strong>, que ofrecen una gama amplia de servicios. También están las agencias de <strong>SEO</strong>, las <strong>agencias de PPC</strong>, y aquellas que se centran en <strong>redes sociales</strong> o <strong>contenido</strong>. Cada una tiene su propio enfoque y experiencia, y entender cada categoría puede facilitar el proceso de selección. Esto también ayuda a las empresas a identificar sus necesidades específicas en marketing digital.</p>
+
+<h3>Agencias de Marketing Digital de Servicio Completo</h3>
+
+<p>Las agencias de marketing digital de servicio completo proporcionan una solución integral. Esto significa que pueden gestionar todo, desde SEO hasta campañas de PPC y marketing en redes sociales. Con tales capacidades, son atractivas para las empresas que buscan una estrategia coherente y unificada. Además, estas agencias cuentan con un equipo diverso de profesionales que trabajan en diferentes áreas del marketing, lo que garantiza un enfoque multidimensional.</p>
+
+<p><strong>Elegir una agencia de este tipo tiene múltiples beneficios</strong>. Primero, al centralizar los servicios, las empresas pueden ahorrar tiempo y recursos. Segundo, la comunicación es más fluida dado que todas las estrategias de marketing se manejan bajo una misma sombrilla. Finalmente, pueden ajustarse rápidamente a las necesidades del cliente y responder a las tendencias del mercado con mayor agilidad. Esta flexibilidad es invaluable en el panorama digital que cambia rápidamente.</p>
+
+<p>Los clientes ideales para estas agencias son aquellos que desean una estrategia de marketing integral sin la necesidad de gestionar múltiples proveedores. Pequeñas y medianas empresas suelen ser las más beneficiadas, ya que no siempre tienen recursos internos suficientes. Grandes corporaciones también pueden optar por estos servicios cuando quieren llevar sus campañas a un nivel más profundo de cohesión y estrategia.</p>
+
+<h3>Agencias de SEO</h3>
+
+<p>Las agencias de SEO se centran en mejorar la visibilidad de una página web en los motores de búsqueda. Uno de los servicios fundamentales que ofrecen incluye la <strong>optimización de palabras clave</strong>, que ayuda a las empresas a posicionar su contenido en las primeras páginas de resultados de búsqueda. Esto es crucial porque la mayoría de las personas no navegan más allá de la primera página de resultados. Además, estas agencias realizan auditorías de sitios para detectar fallos y sugerir mejoras.</p>
+
+<p><strong>La importancia de optimizar los motores de búsqueda no puede subestimarse</strong>. Se estima que más del 50% del tráfico web proviene de búsquedas orgánicas. Por tanto, las empresas que no consideran el SEO pueden perder una gran oportunidad de atraer nuevos clientes. Implementar una buena estrategia de SEO resulta en un aumento del tráfico, la conversión y, en última instancia, las ventas. </p>
+
+<p>Los negocios que se benefician más de los servicios de SEO incluyen desde startups hasta grandes corporaciones. Cualquier empresa que dependa del tráfico web para la generación de ingresos debe considerar esta estrategia. También, las empresas locales pueden aprovechar las técnicas de SEO específicamente desarrolladas para aumentar su presencia entre el público objetivo en su área geográfica.</p>
+
+<h3>Agencias de PPC</h3>
+
+<p>Las agencias de PPC, o pago por clic, se especializan en la creación y gestión de campañas publicitarias online. Estas campañas son particularmente efectivas en plataformas como Google Ads. Su función principal es atraer tráfico de calidad a través de anuncios pagados que aparecen en los resultados de búsqueda. Este enfoque permite a las empresas tener un control más claro sobre el retorno de inversión, ya que se puede medir fácilmente cuántas conversiones genera cada anuncio.</p>
+
+<p>Otra clave de estas agencias es la <strong>gestión de presupuestos de publicidad</strong>. Es fundamental que las empresas establezcan un presupuesto claro para sus campañas. Las agencias de PPC pueden ayudar a maximizar este presupuesto al ajustar las campañas según el rendimiento. Esto significa que pueden pausar anuncios que no son rentables y redirigir fondos a aquellos que sí lo son.</p>
+
+<p>Considerar si se necesita una agencia de PPC puede depender de varios factores. Si una empresa busca resultados rápidos y tiene un presupuesto específico, esta puede ser una buena opción. Además, aquellas que están introduciendo nuevos productos o servicios pueden beneficiarse de estrategias de PPC para generar conciencia de marca de manera rápida y efectiva.</p>
+
+<h3>Agencias de Marketing en Redes Sociales</h3>
+
+<p>Las agencias de marketing en redes sociales se enfocan en construir y mantener una presencia fuerte en plataformas como Facebook, Instagram y Twitter. Sus servicios incluyen desde la creación de contenido atractivo hasta la gestión de comunidades en línea. Este trabajo es vital porque la interacción en redes sociales puede fortalecer la lealtad de los clientes. Al interactuar directamente con la audiencia, las marcas pueden conocer mejor sus preferencias y preocupaciones.</p>
+
+<p>Una parte fundamental de su trabajo es la <strong>creación de contenido que realmente capte la atención</strong> de los usuarios. Esto no solo implica publicar, sino también crear campañas que fomenten la participación. Las preguntas abiertas, encuestas y contenido visual atractivo son tácticas que suelen emplear estas agencias. Al generar interacciones, las marcas pueden reconocer a su audiencia y adaptar su enfoque de marketing.</p>
+
+<p>Además, medir el retorno de inversión en redes sociales es vital. Las agencias deben analizar métricas como <strong>la tasa de participación</strong> y el crecimiento del número de seguidores. Esto permite ajustar las estrategias y garantizar que la empresa obtenga el mayor beneficio posible de sus esfuerzos en redes sociales.</p>
+
+<h3>Agencias de Marketing de Contenido</h3>
+
+<p>Las agencias de marketing de contenido son especialistas en crear contenido relevante y atractivo. Esto abarca desde blogs y artículos hasta videos y publicaciones en redes sociales. El objetivo es atraer y retener a un público claramente definido, lo que a su vez puede llevar a una acción rentable por parte de los consumidores. Una buena estrategia de contenido no solo informa, sino que también entretiene y educa.</p>
+
+<p>La clave es entender que existen diferentes tipos de contenido que pueden ser utilizados dependiendo del público. Por ejemplo, algunas empresas pueden necesitar infografías para explicar procesos complejos. Otras pueden beneficiarse de vídeos cortos en redes sociales. Cada tipo de contenido tiene su propio propósito y es importante alinear los esfuerzos de contenido con los objetivos de negocio más amplios.</p>
+
+<p>Alinear el marketing de contenido con los <strong>objetivos empresariales</strong> es crucial. Esto significa que cada publicación debe contribuir hacia una meta, ya sea aumentar ventas, generar leads o mejorar la conciencia de marca. Muchas veces, el contenido es la base sobre la cual se construye una relación sólida con los clientes, lo que hace de las agencias de contenido elementos esenciales en una estrategia de marketing a largo plazo.</p>
+
+<h3>Agencias de Email Marketing</h3>
+
+<p>Las agencias de email marketing manejan la creación de campañas efectivas que se envían a la base de datos de clientes de una empresa. El objetivo es mantener a los suscriptores informados sobre nuevos productos, promociones y eventos. Además de enviar boletines, estas agencias también se centran en la segmentación de la audiencia para personalizar los mensajes. La segmentación ayuda a aumentar la relevancia de los emails recibidos, lo que se traduce en tasas de apertura más altas.</p>
+
+<p>Además, existen técnicas específicas para mejorar el compromiso de los suscriptores. Las líneas de asunto deben ser atractivas y el contenido debe ser claro y directo. Las llamadas a la acción también son fundamentales. Las agencias deben trabajar para optimizar estos elementos y así aumentar la tasa de clics y conversiones de cada campaña.</p>
+
+<p>Finalmente, <strong>analizar el rendimiento de las campañas de email</strong> es esencial para el éxito. Herramientas de análisis permiten a las agencias comprender lo que funciona y lo que no. Esto incluye indicadores como la tasa de apertura, la tasa de clics y la tasa de conversión. Ajustar las estrategias según estos datos garantiza que se obtenga el máximo rendimiento de cada campaña.</p>
+
+<h3>Agencias de Marketing de Influencers</h3>
+
+<p>Las agencias de marketing de influencers ayudan a las marcas a identificar y asociarse con personas influyentes en su nicho. Estos influencers pueden ser bloggers, youtubers o figuras notables en redes sociales. El objetivo es aumentar la visibilidad y credibilidad de la marca a través de las audiencias de estos colaboradores. Colaborar con influencers puede proporcionar un acceso valioso a segmentos de mercado específicos que de otra manera serían difíciles de alcanzar.</p>
+
+<p>La creación de campañas efectivas con influencers requiere de un enfoque cuidadoso. No solo se trata de seleccionar un influencer por su número de seguidores: la autenticidad debe primeramente ser considerada. Las parejas deben posicionar a la marca de una manera que resuene con su audiencia. Es en esta etapa donde las agencias juegan un papel crucial, ayudando a formular propuestas atractivas.</p>
+
+<p>Evaluar el impacto de estas asociaciones es igualmente importante. Las agencias necesitas medir el alcance y la interacción generada por las campañas. Esto incluye ver cómo se traduce ese compromiso en ventas o en tráfico a la web. Entender el retorno de inversión de la campaña ayuda a determinar la efectividad y a ajustar estrategias futuras.</p>
+
+<h3>Agencias de Marketing de Afiliados</h3>
+
+<p>Las agencias de marketing de afiliados se especializan en desarrollar y gestionar programas de afiliación. Estos programas permiten a las empresas pagar a afiliados por promocionar sus productos, usualmente bajo un modelo de comisión. <strong>Desarrollar relaciones sólidas con los afiliados</strong> es clave para el éxito, ya que ellos se convierten en representantes de la marca en el mercado. Además, contribuyen al tráfico y las ventas de la empresa sin que se requiera una inversión inicial en publicidad directa.</p>
+
+<p>La supervisión de estos programas es fundamental para optimizar los resultados. Las agencias deben asegurarse de que los afiliados cumplan con los estándares de calidad y las políticas de la marca. Esto no solo protege la integridad de la empresa, sino que también maximiza el retorno de la inversión. Monitorear y ajustar las campañas asegura que todos los aliados estén alineados con los objetivos de negocio.</p>
+
+<p>Finalmente, realizar una <strong>evaluación de la rentabilidad</strong> es esencial. Las agencias necesitan analizar el rendimiento de cada afiliado y el retorno en términos de ventas generadas. Este análisis proporciona información valiosa que puede ayudar a ajustar las actuaciones, mejorando las estrategias continúas de marketing de afiliación.</p>
+
+<h3>Agencias de Diseño y Desarrollo Web</h3>
+
+<p>Las agencias de diseño y desarrollo web se centran en crear sitios que no solo sean visualmente atractivos, sino también funcionales y fáciles de navegar. La <strong>experiencia del usuario</strong> es un enfoque central, y el diseño debe guiar al visitante hacia la acción deseada, como realizar una compra o registrarse a un boletín. Un diseño efectivo puede aumentar las conversiones y mantener a los visitantes interesados en el contenido.</p>
+
+<p>Integrar estrategias de marketing en el diseño web es esencial. Por ejemplo, un sitio optimizado para SEO aumentará la visibilidad en los motores de búsqueda. Además, las tendencias tecnológicas continúan evolucionando, y las agencias deben estar al tanto de las últimas actualizaciones. La implementación de tecnologías responsive y de carga rápida asegura que los visitantes tengan una experiencia fluida en diferentes dispositivos.</p>
+
+<p>La <em>adaptación a los cambios tecnológicos</em> es clave en este sector. Ya no se trata solo de estética, sino de funcionalidad y usabilidad. Las agencias deben seguir las tendencias, como el uso de chatbots para atención al cliente o implementación de inteligencia artificial. Estas adaptaciones no son solo necesarias, sino que se vuelven cruciales en un mundo donde los consumidores esperan una experiencia en línea atractiva y eficiente.</p>
+
+<h2>Factores a Considerar al Elegir una Agencia de Marketing Digital</h2>
+
+<p>Al elegir una agencia de marketing digital adecuada, es esencial evaluar primero tus propias necesidades comerciales. Pregúntate: ¿qué objetivos deseas lograr a través del marketing digital? Define tu público objetivo y los resultados deseados. Este proceso es fundamental, ya que al comprender tus propias necesidades, podrás comunicar tus expectativas más claramente a las agencias. </p>
+
+<p>La <strong>experiencia y la especialización de la agencia</strong> son aspectos a considerar seriamente. Investiga su historial en la industria: ¿han trabajado con empresas similares a la tuya? Un portafolio sólido y testimonios positivos son buenas señales de que la agencia puede cumplir tus expectativas. Asegúrate de que tienen un enfoque que se alineé con lo que negas para tu negocio. </p>
+
+<p>El <strong>modelo de precios</strong> es otro factor importante. Pregunta sobre la estructura de precios y si podrás recibir servicios personalizados basados en tu presupuesto. Comprender todos los costos evitará sorpresas más adelante. Algunas agencias pueden ofrecer paquetes, mientras que otras podrían tener tarifas por hora, así que elige la opción que más se ajuste a tu situación.</p>
+
+<h2>Futuras Tendencias en Agencias de Marketing Digital</h2>
+
+<p>El marketing digital está en constante evolución, con tecnologías emergentes que cambian la manera en que las agencias operan. La inteligencia artificial está tomando un papel más significativo en la toma de decisiones. Herramientas basadas en IA pueden analizar grandes volúmenes de datos en tiempo real. Esto permite a las agencias optimizar campañas de manera más eficiente y predecir tendencias antes que aparezcan en el mercado.</p>
+
+<p>La automatización está facilitando tareas repetitivas y permitiendo a los equipos centrarse en estrategias creativas. Las plataformas de automatización ahora manejan el envío de campañas de email y la publicación de contenido en redes sociales, lo que ahorra tiempo y recursos. Este cambio implica que las agencias deben adaptarse a un nuevo contexto laboral donde la creatividad se vuelva aún más valorada.</p>
+
+<p>Finalmente, las <strong>expectativas y comportamientos</strong> de los consumidores están cambiando constantemente. Los clientes buscan interacciones más personalizadas y auténticas con las marcas. Las agencias tendrán que innovar y crear experiencias que resuenen con estos nuevos deseos. Esto significa que entender el comportamiento del consumidor y sus tendencias será vital para diseñar campañas efectivas en el futuro.</p>
+
+            
+
+
+            <br><br> <p>
+                
+                Are you looking for professional services? Find more details here: 
+            
+
+        
+
+
+        <a href="https://kanito.es/">https://kanito.es/</a><br>
+
+
+
+<br><br>
+        
+        </p>
+
+        
+
+        
+
+
+             
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1554558.776261058!2d-6.139522443750041!3d40.44765629999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422955531d5fcd%3A0x35341c7f245b9a53!2sKanito%20Madrid!5e0!3m2!1ses!2ses!4v1751022676302!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+        
+           <br> <p>
+            <div class="next">
+       Related article: <a href="https://businessblog.s3.eu-de.cloud-object-storage.appdomain.cloud/marketing-agency.html">Read more</a>
+    </div>
+       </p>
+        </div>
+    </div>
+    
+
+    <div class="author-box">
+     
+        <div class="info">
+            <h3>Andrés González</h3>
+            <p>Senior Copywriter</p>
+            <p>Andrés González es un talentoso copywriter con una sólida experiencia en el ámbito del marketing digital. Especializado en asesorar a empresas sobre cómo elegir una agencia de marketing digital adecuada, Andrés destaca por su capacidad para explicar de manera clara por qué externalizar el marketing puede ser una decisión estratégica inteligente. Con un enfoque en crear contenido persuasivo y educativo, Andrés ha ayudado a numerosas empresas a optimizar sus procesos de selección de agencias para maximizar su impacto en el mercado digital.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <h3>Daily Dose of News</h3>
+                <p>&copy; 2024, All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Legal Stuff</h3>
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social Media</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    // Select all anchor tags within the div with class 'next'
+    const links = document.querySelectorAll('div.next a');
+
+    // Iterate over each link
+    links.forEach(link => {
+        let href = link.getAttribute('href');
+
+        // Check if href is valid and does not end with .html or any other file extension
+        if (href && !href.endsWith('.html') && !href.match(/\.\w+$/)) {
+            // Add .html extension
+            href += '.html';
+            link.setAttribute('href', href);
+        }
+    });
+});
+
+ </script>
+ 
+</body>
+</html>
