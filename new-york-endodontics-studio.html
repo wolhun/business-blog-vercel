@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Endodontics Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+
+    <div class="container">
+        
+
+
+       
+        <div class="content">
+            <hr>
+            <p></p><p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2302719396953!2d-73.9758958!3d40.756959800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259445ded8a9f%3A0x7b75d607740cd155!2sJamie%20Y.%20Lee%2C%20DDS%2C%20MS%20%2F%20New%20York%20Endodontics%20Studio%20%2F%20Midtown!5e0!3m2!1sen!2sin!4v1760055107432!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p><p></p>
+
+            
+
+
+            <br><br> <p>
+                
+
+        
+
+
+<br><br>
+        
+        </p>
+
+        
+        <p><p><script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "Dentist",
+  "name": "New York Endodontics Studio",
+  "url": "https://www.nyendostudio.com/",
+  "sameAs": [
+     "https://www.instagram.com/ny_endo_studio/",
+     "https://www.linkedin.com/in/drjamielee",
+     "https://toothright.com/cosmetic-dentist/jamie-y-lee-dds-ms-new-york-endodontics-studio-downtown/",
+     "https://www.aae.org/patients/directory/people/jamie-y-lee/",
+     "https://www.zocdoc.com/dentist/yoon-jamie-lee-dds-ms-346762",
+     "https://doctor.webmd.com/doctor/yoon-shin-lee-cc1d15e0-158c-4995-8650-fd32e54b19b4-overview"
+  ],
+  "logo": "https://www.nyendostudio.com/wp-content/uploads/2025/06/NYES_Icon_Logo_Black-02.png",
+  "priceRange": "$$$$",
+  "image": "https://i0.wp.com/nyendostudio.com/wp-content/uploads/2025/06/NYES_Icon_Logo_Black-02.png?w=792&ssl=1",
+  "description": "New York Endodontics Studio, led by board-certified (ABE) endodontist Dr. Jamie Y. Lee — provides microscope-assisted, CBCT-guided root canal therapy, retreatment, apicoectomy, and emergency endodontics in Midtown Manhattan, New York, NY. As a trusted endodontist in NYC near Grand Central and Rockefeller Center, we focus on rapid pain relief and preserving natural teeth with evidence-based care, gentle anesthesia, and transparent treatment plans. Patients and referring dentists choose us for New York endodontics expertise, same-day availability, modern sterilization protocols, and clear aftercare for lasting oral health.",
+  "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "425 Madison Ave # 1801",
+     "addressLocality": "New York",
+     "addressRegion": "NY",
+     "postalCode": "10017",
+     "addressCountry": "United States"
+  },
+  "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": "40.7569598",
+     "longitude": "-73.9784707"
+  },
+  "hasMap": "https://www.google.com/maps?cid=8896251966440395093",
+    "areaServed": [
+  "New York, NY", "New York City", "Manhattan, NY", "Midtown Manhattan", "Midtown East", "Midtown West", "Turtle Bay", "Sutton Place", "Murray Hill", "Kips Bay", "Gramercy Park", "Flatiron District", "NoMad", "Koreatown", "Herald Square", "Garment District", "Theater District", "Times Square", "Bryant Park", "Rockefeller Center", "Grand Central", "Tudor City", "Hudson Yards", "Chelsea", "Hell's Kitchen (Clinton)", "Union Square", "Rose Hill", "Stuyvesant Town–Peter Cooper Village", "Upper East Side", "Lenox Hill", "Carnegie Hill", "Yorkville", "Upper West Side", "Lincoln Square", "Manhattan Valley", "Morningside Heights", "Harlem", "East Harlem (El Barrio)", "Hamilton Heights", "Sugar Hill", "Washington Heights", "Hudson Heights", "Inwood", "Marble Hill", "Central Park South", "Columbus Circle", "Financial District (FiDi)", "Battery Park City", "Tribeca", "SoHo", "NoHo", "Nolita", "Greenwich Village", "West Village", "Meatpacking District", "Little Italy", "Chinatown", "Lower East Side", "Two Bridges", "Bowery", "Civic Center", "South Street Seaport", "Seaport District", "Roosevelt Island", "Queens", "Long Island City", "Astoria", "Sunnyside", "Woodside", "Jackson Heights", "East Elmhurst", "Elmhurst", "Corona", "Ridgewood", "Forest Hills", "Rego Park", "Brooklyn", "Williamsburg", "Greenpoint", "Brooklyn Heights", "DUMBO", "Downtown Brooklyn", "Cobble Hill", "Boerum Hill", "Fort Greene", "Clinton Hill", "Park Slope", "Prospect Heights", "Crown Heights", "Gowanus", "Carroll Gardens", "Red Hook", "Bushwick", "Bedford–Stuyvesant", "Sunset Park", "Bay Ridge", "Bronx", "South Bronx", "Mott Haven", "Port Morris", "Melrose", "Concourse", "Fordham", "University Heights", "Kingsbridge", "Riverdale", "Throgs Neck", "Pelham Bay", "Staten Island", "St. George", "Tompkinsville", "Stapleton", "New Dorp", "Great Kills", "Tottenville"
+],
+   "openingHours": "Mo-Fr 09:00-18:00",
+  "telephone": "+19175650302"
+}
+</script>
+</p></p>
+    
+
+        
+
+
+             
+           <br> <p>
+            <div class="next">
+       Related article: <a href="https://businessblog.s3.eu-de.cloud-object-storage.appdomain.cloud/new-york-endodontics-studio.html">Read more</a>
+    </div>
+       </p>
+        </div>
+    </div>
+    
+
+  
+
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    // Select all anchor tags within the div with class 'next'
+    const links = document.querySelectorAll('div.next a');
+
+    // Iterate over each link
+    links.forEach(link => {
+        let href = link.getAttribute('href');
+
+        // Check if href is valid and does not end with .html or any other file extension
+        if (href && !href.endsWith('.html') && !href.match(/\.\w+$/)) {
+            // Add .html extension
+            href += '.html';
+            link.setAttribute('href', href);
+        }
+    });
+});
+
+ </script>
+ 
+</body>
+</html>
